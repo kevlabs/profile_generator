@@ -47,7 +47,7 @@ const next = function(questions, callback = null, answers = {}, rl = null) {
     return answers;
   } else {
     rl.question(questions[0].question + '\n>  ', (answer) => {
-      next(questions.slice(1), callback, Object.assign(answers, {[questions[0].id]: {id: [questions[0].id], question: questions[0].question, answer}}), rl);
+      return next(questions.slice(1), callback, Object.assign(answers, {[questions[0].id]: {id: [questions[0].id], question: questions[0].question, answer}}), rl);
     });
   }
 
