@@ -54,7 +54,7 @@ const next = function(questions, callback = null, answers = {}, rl = null) {
 };
 
 const print = function(answers) {
-  process.stdout.write(`${answers.name.answer} loves listening to ${answers.music.answer} while ${answers.hobby.answer}, devouring ${answers.food.answer} for ${answers.meal.answer}, prefers ${answers.sport.answer} over any other sport, and is amazing at ${answers.excelAt.answer}.`);
+  process.stdout.write(`${answers.name.answer} loves listening to ${answers.music.answer} while ${answers.hobby.answer}, devouring ${answers.food.answer} for ${answers.meal.answer}, prefers ${answers.sport.answer} over any other sport, and is amazing at ${answers.excelAt.answer}.\n`);
 };
 
 next(questions, print);
